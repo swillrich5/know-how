@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Know How</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <ul>
+            {% for content in content_list %}
+                <li><a href='/content/{{ content.id }}/'>{{ content.subject }}</a></li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
